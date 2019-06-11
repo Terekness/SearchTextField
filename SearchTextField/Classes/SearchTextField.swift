@@ -664,6 +664,11 @@ open class SearchTextFieldItem {
         self.subtitle = subtitle
     }
     
+    public init(title: String, subtitle: String?, placeId: String?) {
+        self.title = title
+        self.subtitle = subtitle
+    }
+    
     public init(title: String) {
         self.title = title
     }
