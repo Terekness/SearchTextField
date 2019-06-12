@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 open class SearchTextField: UITextField {
     
@@ -653,6 +654,7 @@ open class SearchTextFieldItem {
     public var subtitle: String?
     public var image: UIImage?
     public var placeId: String?
+    public var coordinate: CLLocationCoordinate2D?
     
     public init(title: String, subtitle: String?, image: UIImage?) {
         self.title = title
@@ -669,6 +671,12 @@ open class SearchTextFieldItem {
         self.title = title
         self.subtitle = subtitle
         self.placeId = placeId
+    }
+    
+    public init(title: String, subtitle: String?, coordinate: CLLocationCoordinate2D?) {
+        self.title = title
+        self.subtitle = subtitle
+        self.coordinate = coordinate
     }
     
     public init(title: String) {
