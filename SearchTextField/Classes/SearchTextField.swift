@@ -652,6 +652,7 @@ open class SearchTextFieldItem {
     public var title: String
     public var subtitle: String?
     public var image: UIImage?
+    public var placeId: String?
     
     public init(title: String, subtitle: String?, image: UIImage?) {
         self.title = title
@@ -667,6 +668,7 @@ open class SearchTextFieldItem {
     public init(title: String, subtitle: String?, placeId: String?) {
         self.title = title
         self.subtitle = subtitle
+        self.placeId = placeId
     }
     
     public init(title: String) {
